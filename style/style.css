@@ -1,0 +1,810 @@
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest/OnestBold.woff') format('woff'), url('../fonts/Onest/OnestBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest/OnestMedium.woff') format('woff'), url('../fonts/Onest/OnestMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest/OnestRegular.woff') format('woff'), url('../fonts/Onest/OnestRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest/OnestLight.woff') format('woff'), url('../fonts/Onest/OnestLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --bg: #F9F9F9;
+    --text: #0F172A;
+    --text-gray-light: #374362;
+    --text-gray: #C4C4C4;
+    --green: #B2FA63;
+    --green-light: #E8FF93;
+    --purple: #B2A1FF;
+    --purple-light: #CBB9F0;
+    --purple-hover: #F0E9FF;
+    --orange: #FF7833;
+    --orange-light: #F5A983;
+    --orange-hover: #FFE2D3;
+    --black: #1C1C1E;
+    --gray: #0F172A;
+    --bg-gray: #EFEFEF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--text);
+}
+
+.title {
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.wrapper__bg {
+    background-color: var(--bg);
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-item+.header__menu-item {
+    margin-left: 32px;
+}
+
+.intro {
+    padding-bottom: 138px;
+}
+
+.intro__form {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.intro__select-gender {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.select-gender__item {
+    border-radius: 24px;
+}
+
+.gender__item--male {
+    background-color: var(--purple);
+}
+
+.gender__item--female {
+    background-color: var(--orange-light);
+}
+
+.gender__item--other {
+    background-color: var(--green);
+}
+
+.select__item-image {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.select-gender__item+.select-gender__item {
+    margin-left: 10px;
+}
+
+.select__item-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    width: 250px;
+    height: 190px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select__item-title--active {
+    border: 2px solid var(--orange-light)
+}
+
+.intro__weight-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.weight-select__title+.weight-select__title {
+    margin-left: 24px;
+}
+
+.weight-select__title {
+    padding: 24px 44px;
+    border-radius: 14px;
+    background-color: var(--bg-gray);
+    width: 408px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    transition: all .3s;
+}
+
+.weight-select__title:not(.select__title--active):hover,
+.weight-select__medication-title:not(.select__title--active):hover {
+    background-color: var(--purple-hover);
+    cursor: pointer;
+}
+
+.intro__weight-medication {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.weight-medication__header {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.weight-select__medication-title {
+    width: 690px;
+    background-color: var(--bg-gray);
+    padding: 20px 50px;
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    position: relative;
+    /* cursor: pointer;*/
+    transition: all .3s;
+}
+
+.weight-select__medication-title:hover {
+    background-color: var(--purple-hover);
+}
+
+.weight__select-block {
+    margin-bottom: 65px;
+}
+
+.medication-title--yes:after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url('../images/yes.svg') center no-repeat;
+    right: 24px;
+    top: 18px;
+}
+
+.medication-title--no:after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url('../images/no.svg') center no-repeat;
+    right: 24px;
+    top: 18px;
+}
+
+.weight-medication-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.title-checkbox__field input {
+    background-color: var(--bg);
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    border-bottom: 1px solid var(--text);
+    outline: none;
+    width: 270px;
+}
+
+.title-checkbox__field input::placeholder {
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.intro__weight-medication {
+    margin-bottom: 45px;
+}
+
+.intro-select__title-checkbox {
+    padding: 35px 50px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    display: grid;
+}
+
+.section__check-up {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.check-up-policy {
+    margin-bottom: 15px;
+}
+
+
+
+.section__check-up {
+    margin-bottom: 75px;
+}
+
+.check-up-policy input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-up-policy input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.check-up-policy input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid var(--text);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85% 85%;
+}
+
+.check-up-policy input:checked+label::before {
+    background-image: url("../images/mark-min.svg");
+}
+
+.check-up-distrib input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-up-distrib input+label {
+    display: inline-flex;
+    user-select: none;
+}
+
+.check-up-distrib input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid var(--text);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85% 85%;
+}
+
+.check-up-distrib input:checked+label::before {
+    background-image: url("../images/mark-min.svg");
+}
+
+.weight-title__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label связанного с .weight-title__checkbox */
+.weight-title__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.weight-title__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75% 75%;
+    cursor: pointer;
+}
+
+.weight-title__checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: var(--text-gray-light);
+}
+
+.weight-title__checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem var(--purple-hover);
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.weight-title__checkbox:checked+label::before {
+    background-image: url("../images/mark.svg");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.weight-title__checkbox:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+.title-checkbox__field label {
+    cursor: pointer;
+}
+
+.weight-title__checkbox:checked+label::before .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.intro__button-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.intro__button {
+    padding: 25px 125px;
+    background-color: var(--orange);
+    border-radius: 100px;
+    transition: all .3s;
+}
+
+.intro__button:hover {
+    background-color: var(--orange-hover);
+}
+
+.intro__button-text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 8px rgba(136, 136, 136, 0.25);
+}
+
+/* !---------------------------- Page Step 2 Style --------------------------------------*/
+
+.section__step {
+    padding-bottom: 160px;
+}
+
+.step2__form {
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.personal {
+    margin-bottom: 85px;
+}
+
+.personal__title {
+    font-size: 32px;
+    margin-bottom: 45px;
+
+}
+
+.personal__inner,
+.parameter__inner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.step__inner-input {
+    border-radius: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.personal__inner-input::placeholder {
+    text-align: center;
+}
+
+
+.parameter {
+    margin-bottom: 80px;
+}
+
+.parameter__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.parameter__input {
+    text-align-last: left;
+}
+
+.parameter__inner-label {
+    position: relative;
+}
+
+.parameter__input::placeholder {
+    color: var(--text-gray-ligth);
+}
+
+
+.parameter__input+span {
+    position: absolute;
+    align-items: center;
+    transform: translateY(100%);
+    right: 35px;
+}
+
+
+
+.desired {
+    max-width: 612px;
+    margin: 0 auto;
+}
+
+.desired__title {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.desired__weight-input {
+    border-radius: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.desired__input-block {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.desired__input-block:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 62px;
+    background: url('../images/click.svg') center no-repeat;
+    top: -35px;
+    left: -35px;
+}
+
+.desired__input-block:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 62px;
+    background: url('../images/click.svg') center no-repeat;
+    transform: rotate(-180deg);
+    bottom: -15px;
+    right: -35px;
+}
+
+.desired__awesome {
+    border-radius: 36px;
+    background-color: #fff;
+    margin-bottom: 75px;
+    padding: 15px 75px 25px 45px;
+    text-align: left;
+    filter: drop-shadow(0px 6px 8px rgba(136, 136, 136, 0.15));
+    position: relative;
+}
+
+.desired__awesome::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 29px;
+    background: url('../images/triangle.svg') center no-repeat;
+    bottom: -8px;
+    left: 0;
+}
+
+.desired__awesome-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 3px;
+}
+
+.desired__awesome-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+/* !---------------------------- Page Step 3 Style --------------------------------------*/
+
+.step3__form {
+    max-width: 612px;
+    margin: 0 auto
+}
+
+.step3__form-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.step3__form-items {
+    margin-bottom: 75px;
+}
+
+.step3__form-item {
+    padding: 25px 20px;
+    border-radius: 14px;
+    background-color: var(--bg-gray);
+    transition: all .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.step3__form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+
+.step3__form-item:not(.select__title--active):hover {
+    background-color: var(--purple-hover);
+    cursor: pointer;
+}
+
+/* !---------------------------- end Page Step 3 Style --------------------------------------*/
+
+
+/* !---------------------------- Page Step 7 Style --------------------------------------*/
+.step7__form {
+    max-width: 612px;
+    margin: 0 auto;
+
+}
+
+
+.step7__form-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.step7__form-items {
+    margin-bottom: 75px;
+}
+
+.step7__form-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 37px 20px;
+    border-radius: 14px;
+    background-color: var(--bg-gray);
+    transition: all .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.step7__form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+.step7__form-select+.step7__form-select {
+    margin-left: 20px;
+}
+/* !---------------------------- end Page Step 7 Style --------------------------------------*/
+
+/* !---------------------------- Page Step 8 Style --------------------------------------*/
+.step8__form {
+    max-width: 612px;
+    margin: 0 auto;
+}
+
+
+.step8__form-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.step8__form-items {
+    margin-bottom: 75px;
+}
+
+.step8__form-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 37px 20px;
+    border-radius: 14px;
+    background-color: var(--bg-gray);
+    transition: all .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.step8__form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    max-width: 450px;
+}
+
+.step8__form-select+.step8__form-select {
+    margin-left: 20px;
+}
+
+
+/* !---------------------------- end Page Step 8 Style --------------------------------------*/
+
+/* !------------------------------------ custom setting should be at the bottom codefile----------- */
+
+
+.select__title--active {
+    background-color: var(--purple);
+    border: 1px solid #F0E9FF;
+}
+
+.select-active--yes {
+    background-color: rgba(183, 247, 109, 0.15);
+}
+
+.select-active--no {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.select--yes svg path,
+.select--no svg path {
+    transition: all .3s;
+}
+
+.select--yes:hover svg path {
+    stroke: #69C400;
+}
+
+.select--no:hover svg path {
+    stroke: #ff0000;
+}
+
+
+.select-active--yes .select--yes svg path {
+    stroke: #69C400;
+}
+
+.select-active--no .select--no svg path {
+    stroke: #ff0000;
+}

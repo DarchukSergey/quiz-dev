@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__bg">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                    <menu class="header__menu">
+                        <li class="header__menu-item"><a href="#">Meal plans</a>
+                            <!-- <ul class="menu-plans__items">
+                                <li class="menu-plans__item">1</li>
+                                <li class="menu-plans__item">2</li>
+                                <li class="menu-plans__item">3</li>
+                                <li class="menu-plans__item">4</li>
+                                <li class="menu-plans__item">5</li>
+
+                            </ul> -->
+                        </li>
+                        <li class="header__menu-item"><a href="#">Results</a></li>
+                        <li class="header__menu-item"><a href="#">Team</a></li>
+                        <li class="header__menu-item"><a href="#">About</a></li>
+                        <li class="header__menu-item"><a href="#">Contacts</a></li>
+                    </menu>
+                </div>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="container">
+                <form class="intro__form">
+                    <div class="intro__select-gender">
+                        <div class="select-gender__item gender__item--male" data-gender="male">
+                            <p class="select__item-title">Male</p>
+                        </div>
+                        <div class="select-gender__item gender__item--female" data-gender="female">
+                            <p class="select__item-title">Female</p>
+                        </div>
+                        <div class="select-gender__item gender__item--other select__item-title--active" data-gender="other">
+                            <p class="select__item-title">Other</p>
+                        </div>
+                    </div>
+                    <div class="intro__weight-select">
+                        <p class="weight-select__title select__title--active">I want to lose weight?</p>
+                        <p class="weight-select__title">I want to maintain my current weight</p>
+                    </div>
+                    <div class="intro__weight-medication">
+                        <h2 class="weight-medication__header">Are you taking any weight loss medication?</h2>
+                        <div class="weight__select-block">
+                            <div class="weight-select__medication">
+                                <p class="weight-select__medication-title select__title--active medication-title--yes ">Yes</p>
+                                <div class="intro-select__title-checkbox">
+                                    <p class="title-checkbox__field">
+                                        <input class="weight-title__checkbox" type="radio" name="check" id="Ozempic">
+                                        <label for="Ozempic">Ozempic</label>
+                                    </p>
+                                    <p class="title-checkbox__field">
+                                        <input class="weight-title__checkbox" type="radio" name="check" id="Duromine">
+                                        <label for="Duromine">Duromine</label>
+
+                                    </p>
+                                    <p class="title-checkbox__field">
+                                        <input class="weight-title__checkbox" type="radio" name="check" id="Other">
+                                        <label for="Other">Other</label>
+                                    </p>
+                                    <div class="title-checkbox__field">
+                                        <label for="weight-write" class="control-label"></label>
+                                        <input type="text" placeholder="Write the drug you are taking" disabled="disabled"              id="weight-write">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="weight-select__medication-title  medication-title--no">No</p>
+                        </div>
+                        <p class="weight-medication-text">
+                            If you are on this page, you are already ready to change for the better. <br> It will take you about 10 minutes to complete the check-up.
+                        </p>
+                    </div>
+                    <div class="section__check-up">
+                        <p class="check-up-policy">
+                            <input type="checkbox" checked="checked" id="policy">
+                            <label for="policy">By continuing, I agree with Terms of Service, PrivacyPolicy, Money-Back
+                                Policy, Subscription terms, Cookiepolicy</label>
+                        </p>
+                        <p class="check-up-distrib">
+                            <input type="checkbox" id="distrib">
+                            <label for="distrib">I would like to receive updates about products,
+                                services, and
+                                special offers from MHW via email.<br> We recommend you to consult your physician
+                                beforestarting to follow any weight loss program</label>
+                        </p>
+                    </div>
+                </form>
+                <div class="intro__button-container">
+                    <button type="button" class="intro__button">
+                        <span class="intro__button-text">Let`s Go!</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+</body>
+
+</html>

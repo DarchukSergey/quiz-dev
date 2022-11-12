@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__bg">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <img class="logo" src="images/logo.png" alt="logo">
+                        <menu class="header__menu">
+                            <li class="header__menu-item"><a href="#">Meal plans</a>
+                            <!-- <ul class="menu-plans__items">
+                                <li class="menu-plans__item">1</li>
+                                <li class="menu-plans__item">2</li>
+                                <li class="menu-plans__item">3</li>
+                                <li class="menu-plans__item">4</li>
+                                <li class="menu-plans__item">5</li>
+                            </ul> -->
+                            </li>
+                            <li class="header__menu-item"><a href="#">Results</a></li>
+                            <li class="header__menu-item"><a href="#">Team</a></li>
+                            <li class="header__menu-item"><a href="#">About</a></li>
+                            <li class="header__menu-item"><a href="#">Contacts</a></li>
+                        </menu>
+                    </div>
+                </div>
+            </header>
+            <!--------------------------------------end  header custom ----------------------------------------------->
+            <section class="section__step">
+                <div class="container">
+                    <form class="step2__form">
+                        <div class="personal">
+                            <h2 class="personal__title title">
+                                Personal information
+                            </h2>
+                            <div class="personal__inner">
+                                <label for="name">
+                                    <input class="personal__name step__inner-input" type="text" name="name"
+                                        placeholder="Name*" required>
+                                </label>
+                                <label for="surname">
+                                    <input class="personal__surname step__inner-input" type="text" name="surname"
+                                        placeholder="Surname*" required>
+                                </label>
+                                <label for="email">
+                                    <input class="personal__email step__inner-input" type="email" name="email"
+                                        placeholder="Email*" required>
+                                </label>
+                                <label for="mobile">
+                                    <input class="personal__tel step__inner-input" type="tel" name="mobile"
+                                        placeholder="Mobile*" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="parameter">
+                            <h2 class="parameter__title title">
+                                Let's check your body measurements
+                            </h2>
+                            <div class="parameter__inner">
+                                <label class="parameter__inner-label" for="weight">
+                                    <input class="step__inner-input parameter__input parameter__weight" type="text" name="weight"
+                                        placeholder="Current weight">
+                                    <span>kg</span>
+                                </label>
+                                <label class="parameter__inner-label" for="age">
+                                    <input class="step__inner-input parameter__input parameter__age" type="text" name="age"
+                                        placeholder="Age">
+                                    <span>years</span>
+
+                                </label>
+                                <label class="parameter__inner-label" for="height">
+                                    <input class="step__inner-input parameter__input parameter__height" type="text" name="height"
+                                        placeholder="Height">
+                                    <span>cm</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="desired">
+                            <h2 class="desired__title title">
+                                Your desired weight
+                            </h2>
+                            <div class="desired__input-block">
+                                <label for="desired__weight" class="desired__weight">
+                                    <input class="desired__weight-input step__inner-input" name="desired__weight"
+                                        type="text" placeholder="kg">
+                                </label>
+                            </div>
+                            <div class="desired__awesome">
+                                <p class="desired__awesome-title">Awesome!</p>
+                                <p class="desired__awesome-text">Keep going so that we can better help you reach your
+                                    goal.</p>
+                            </div>
+                        </div>
+                        <div class="intro__button-container">
+                            <button type="submit" class="intro__button">
+                                <span class="intro__button-text">Next</span>
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
