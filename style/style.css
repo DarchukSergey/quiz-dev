@@ -102,7 +102,6 @@ body {
     font-family: 'Onest', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
     color: var(--text);
 }
 
@@ -147,6 +146,17 @@ body {
 .header__menu-item+.header__menu-item {
     margin-left: 32px;
 }
+
+.step__form {
+    max-width: 612px;
+    margin: 0 auto
+}
+
+.step__form-item:hover {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.15));
+}
+
+/* -------------------------------------- INTRO ------------------- */
 
 .intro {
     padding-bottom: 138px;
@@ -650,10 +660,7 @@ body {
 
 /* !---------------------------- Page Step 3 Style --------------------------------------*/
 
-.step3__form {
-    max-width: 612px;
-    margin: 0 auto
-}
+
 
 .step3__form-title {
     text-align: center;
@@ -688,14 +695,139 @@ body {
 
 /* !---------------------------- end Page Step 3 Style --------------------------------------*/
 
+/* !---------------------------- Page Step 4 Style --------------------------------------*/
 
-/* !---------------------------- Page Step 7 Style --------------------------------------*/
-.step7__form {
-    max-width: 612px;
-    margin: 0 auto;
+
+
+.step4__form-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 45px;
+}
+
+.step4__form-items {
+    margin-bottom: 75px;
+}
+
+.step4__form-item {
+    background-color: var(--bg-gray);
+    border-radius: 14px;
+    padding: 6px 16px 6px 46px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step4__form-inner_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
+.step4__form-inner_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 5px;
+}
+
+.step4__form-inner_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    max-width: 400px;
+}
+
+.step4__form-image {}
+
+.step4__form-img {
+    border-radius: 4px;
+    display: block;
+}
+
+
+/* !---------------------------- end Page Step 4 Style --------------------------------------*/
+
+/* !---------------------------- Page Step 6 Style --------------------------------------*/
+.step6__form-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 45px;
+}
+
+.step6__form-item-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    height: 72px;
+    line-height: 130%;
+    position: relative;
+}
+.step6__form-item-inner::after{
+    content: '';
+    position: absolute;
+    height: 24px;
+    right: 20px;
+}
+
+.inner--drop1:after{
+    background: url('../images/drop.png') center;
+    width: 18px;
+}
+
+.inner--drop2:after{
+    background: url('../images/drop2.png') center;
+    width: 52px;
+}
+
+.inner--drop3:after{
+    background: url('../images/drop3.png') center;
+    width: 78px; 
+}
+
+
+.inner--drop4:after{
+    background: url('../images/drop4.png') center;
+    width: 104px;
+}
+
+
+.inner--drop5:after{
+    background: url('../images/drop5.png') center;
+    width: 135px;
+}
+
+
+.step6__form-items {
+    margin-bottom: 75px;
+}
+
+.step6__form-item {
+    background-color: var(--bg-gray);
+    border-radius: 14px;
+    /* padding: 20px 25px; */
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.step6__form-text {
+    font-size: 18px;
+}
+
+.step6__form-subtext {
+    font-size: 10px;
+   
+}
+
+/* !---------------------------- end Page Step 6 Style --------------------------------------*/
+
+/* !---------------------------- Page Step 7 Style --------------------------------------*/
 
 .step7__form-title {
     margin-bottom: 45px;
@@ -723,17 +855,14 @@ body {
     font-size: 18px;
     line-height: 130%;
 }
+
 .step7__form-select+.step7__form-select {
     margin-left: 20px;
 }
+
 /* !---------------------------- end Page Step 7 Style --------------------------------------*/
 
 /* !---------------------------- Page Step 8 Style --------------------------------------*/
-.step8__form {
-    max-width: 612px;
-    margin: 0 auto;
-}
-
 
 .step8__form-title {
     margin-bottom: 45px;
@@ -747,14 +876,14 @@ body {
 .step8__form-item {
     display: flex;
     justify-content: space-between;
-    padding: 25px 37px 20px;
+    padding: 25px 27px 20px;
     border-radius: 14px;
     background-color: var(--bg-gray);
     transition: all .3s;
     margin-bottom: 20px;
-    cursor: pointer;
     display: flex;
     align-items: center;
+    transition: all .3s;
 }
 
 .step8__form-text {
@@ -764,8 +893,13 @@ body {
     max-width: 450px;
 }
 
+.step8__form-select {
+    cursor: pointer;
+    padding: 10px 5px;
+}
+
 .step8__form-select+.step8__form-select {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
