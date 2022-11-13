@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/result-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__bg">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <img class="logo" src="images/logo.png" alt="logo">
+                        <menu class="header__menu">
+                            <li class="header__menu-item"><a href="#">Meal plans</a>
+                                <!-- <ul class="menu-plans__items">
+                                <li class="menu-plans__item">1</li>
+                                <li class="menu-plans__item">2</li>
+                                <li class="menu-plans__item">3</li>
+                                <li class="menu-plans__item">4</li>
+                                <li class="menu-plans__item">5</li>
+                            </ul> -->
+                            </li>
+                            <li class="header__menu-item"><a href="#">Results</a></li>
+                            <li class="header__menu-item"><a href="#">Team</a></li>
+                            <li class="header__menu-item"><a href="#">About</a></li>
+                            <li class="header__menu-item"><a href="#">Contacts</a></li>
+                        </menu>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="container">
+                    <div class="result">
+                        <h2 class="result__title">We know how to lose <span class="span--red">666</span> kg and keep the
+                            result</h2>
+                        <div class="result__inner">
+                            <div class="result__inner_schedule">
+                                <img src="images/graph.png" alt="">
+                            </div>
+                            <div class="result__inner_data">
+                                <ul class="result__inner_data-items">
+                                    <li class="result__inner_data-item item__weight">
+                                        <img class="result__data_image item__weight-image" src="images/fire.svg"
+                                            alt="fire">
+                                        <p class="result__data_text">Daily calorie norm for weight loss</p>
+                                        <p class="result__data_digit">1850 kcal</p>
+                                    </li>
+                                    <li class="result__inner_data-item item__calorie">
+                                        <img class="result__data_image item__calorie-image" src="images/fire.svg"
+                                            alt="fire">
+                                        <p class="result__data_text">Daily calorie norm for maintenance</p>
+                                        <p class="result__data_digit">5999 kcal</p>
+                                    </li>
+                                    <li class="result__inner_data-item item__result">
+                                        <img class="result__data_image item__result-image" src="images/arrow-down.svg"
+                                            alt="arrow-down">
+                                        <p class="result__data_text">First visible results in 10 days
+                                        </p>
+                                        <p class="result__data_digit">-4,5 kg</p>
+                                    </li>
+                                    <li class="result__inner_data-item item__water">
+                                        <img class="result__data_image item__water-image" src="images/drop-water.svg"
+                                            alt="drop">
+                                        <p class="result__data_text">Daily water minimum</p>
+                                        <p class="result__data_digit">2,2 l</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <h2 class="summary__title title">Personal summary</h2>
+                        <div class="summary__items">
+                            <div class="summary__item summary__item-bmi summary__card">
+                                <h3 class="summary__item_title item-bmi_title">
+                                    Current BMI
+                                </h3>
+                                <div class="summary__item-bmi_inner">
+                                    <div class="summary__item_bmi-anychart">
+                                        <img src="images/graph-circle.png" alt="#">
+                                    </div>
+                                    <div class="summary__item_bmi-info">
+                                        <p class="summary__item_bmi-title">
+                                            Your body weight is
+                                        </p>
+                                        <p class="summary__item_bmi-level">
+                                            Normal
+                                        </p>
+                                        <p class="summary__item_bmi-annex">
+                                            *IMC 18.5 -24.9
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary__item summary__item-bmr summary__card">
+                                <h3 class="summary__item_title summary__item-bmr_title">
+                                    BMR
+                                </h3>
+                                <div class="summary__item-bmr_inner">
+                                    <div class="summary__item-bmr_list">
+                                        <p class="summary__item-bmr_list-title">
+                                            based on:
+                                        </p>
+                                        <ul class="summary__item-bmr_list-items">
+                                            <li class="summary__item-bmr_list-item">body surface area</li>
+                                            <li class="summary__item-bmr_list-item">body weight</li>
+                                            <li class="summary__item-bmr_list-item">sex</li>
+                                            <li class="summary__item-bmr_list-item">age </li>
+                                        </ul>
+                                    </div>
+                                    <div class="summary__item-bmr_rate">
+                                        <p class="summary__item-bmr_rate-title">
+                                            your basal metabolic rate is:
+                                        </p>
+                                        <p class="summary__item-bmr_rate-total">
+                                            2721
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="summary__item summary__item-data">
+                                <div class="summary__item-data_elements">
+                                    <div class="summary__item-data_element">
+                                        <p class="summary__item-data_element-title">Age</p>
+                                        <p class="summary__item-data_element-parameter">
+                                            <span class="summary__item-data_digit">29</span>
+                                            years
+                                        </p>
+                                    </div>
+                                    <div class="summary__item-data_element">
+                                        <p class="summary__item-data_element-title">Height</p>
+                                        <p class="summary__item-data_element-parameter">
+                                            <span class="summary__item-data_digit">174</span>cm
+                                        </p>
+                                    </div>
+                                    <div class="summary__item-data_element">
+                                        <p class="summary__item-data_element-title">Weight</p>
+                                        <p class="summary__item-data_element-parameter">
+                                            <span class="summary__item-data_digit">65</span>
+                                            kg
+                                        </p>
+                                    </div>
+                                    <div class="summary__item-data_element">
+                                        <p class="summary__item-data_element-title">Optimal weight</p>
+                                        <p class="summary__item-data_element-parameter">
+                                            <span class="summary__item-data_digit">63</span>
+                                            kg
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plans-wrapper">
+                    <div class="container--narrow">
+                        <div class="plans">
+                            <div class="plans-head">
+                                <div class="plans-head__inner">
+                                    <div class="plans-head__text">
+                                        <p class="plans-head__title">
+                                            We have created
+                                            <span class="plans-head__title-span">
+                                                10000+ meal plans
+                                            </span>
+                                            to help people to achieve their goal
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plans-body">
+                                <h2 class="plans-body__title">Choose your plan</h2>
+                                <div class="plans-body__cards">
+                                    <div class="plans-card">
+                                        <h4 class="plans-card__title">
+                                            1-months plan
+                                        </h4>
+                                        <div class="plans-card__inner">
+                                            <div class="plans-card__inner-price">
+                                                <p class="plans-card__inner-price_title">
+                                                    <span class="plans-card__inner-subtitle">
+                                                        60$
+                                                    </span>
+                                                    Per member, per month
+                                                </p>
+                                            </div>
+                                            <ul class="plans-card__inner-list">
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                            </ul>
+                                        </div>
+                                        <a class="plans-card__button">
+                                            Get my plan
+                                        </a>
+                                    </div>
+                                    <div class="plans-card">
+                                        <h4 class="plans-card__title">
+                                            3-months plan
+                                        </h4>
+                                        <div class="plans-card__inner">
+                                            <div class="plans-card__inner-price">
+                                                <p class="plans-card__inner-price_title">
+                                                    <span class="plans-card__inner-subtitle">
+                                                        180$
+                                                    </span>
+                                                    Per member, per month
+                                                </p>
+                                            </div>
+                                            <ul class="plans-card__inner-list">
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                                <li class="plans-card__inner-item">Lorem ipsum dolor sit</li>
+                                            </ul>
+                                        </div>
+                                        <a class="plans-card__button">Get my plan
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transformations">
+                    <div class="container--narrow">
+                        <h2 class="transformations__title">Let's take a look at our users' transformations</h2>
+                        <div class="transformations__users">
+                            <div class="transformations__user">
+                                <div class="transformations__user-images">
+                                    <div class="transformations__user-image">
+                                        <img class="transformations__user-img" src="images/elizabeth-before.jpg"
+                                            alt="#">
+                                        <div class="transformations__user-weight">84<span
+                                                class="transformations--kg">kg</span></div>
+                                    </div>
+                                    <div class="transformations__user-image">
+                                        <img class="transformations__user-img" src="images/elizabeth-after.jpg" alt="#">
+                                        <div class="transformations__user-weight">71<span
+                                                class="transformations--kg">kg</span></div>
+                                    </div>
+
+                                </div>
+                                <div class="transformations__user-text">
+                                    <p class="transformations__user-name">Elizabeth</p>
+                                    <p class="transformations__user-year">32 y.o</p>
+                                </div>
+                            </div>
+
+                            <div class="transformations__user">
+                                <div class="transformations__user-images">
+                                    <div class="transformations__user-image">
+                                        <img class="transformations__user-img" src="images/tiffany-before.jpg" alt="#">
+                                        <div class="transformations__user-weight">69<span
+                                                class="transformations--kg">kg</span></div>
+                                    </div>
+                                    <div class="transformations__user-image">
+                                        <img class="transformations__user-img" src="images/tiffany-after.jpg" alt="#">
+                                        <div class="transformations__user-weight">61<span
+                                                class="transformations--kg">kg</span></div>
+                                    </div>
+                                </div>
+                                <div class="transformations__user-text">
+                                    <p class="transformations__user-name">Tiffany</p>
+                                    <p class="transformations__user-year">27 y.o</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transformations__button">
+                            <button class="transformations__btn">
+                                <p>Show me more</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__block">
+                            <div class="footer__logo">
+                                <img class="logo" src="images/logo-footer.png" alt="logo">
+                            </div>
+                            <div class="footer__copyright">
+                                <p class="footer__copuright-text">Copyright © 2022 • MyHealthyWeingt</p>
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__menu">
+                                <h4 class="footer__menu_title">
+                                    Company
+                                </h4>
+                                <ul class="footer__menu_items">
+                                    <li class="footer__menu_item">
+                                        <a href="#" class="footer__menu_item-link">
+                                            Results
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu_item">
+                                        <a href="#" class="footer__menu_item-link">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu_item">
+                                        <a href="#" class="footer__menu_item-link">
+                                            Team
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu_item">
+                                        <a href="#" class="footer__menu_item-link">
+                                            Contacts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__plan">
+                                <h4 class="footer__plan_title">Meal plans</h4>
+                                <ul class="footer__plan_items">
+                                    <li class="footer__plan_item">
+                                        <a href="#" class="footer__plan_link">
+                                            Personal
+                                        </a>
+                                    </li>
+                                    <li class="footer__plan_item">
+                                        <a href="#" class="footer__plan_link">
+                                            Ozempic
+                                        </a>
+                                    </li>
+                                    <li class="footer__plan_item">
+                                        <a href="#" class="footer__plan_link">
+                                            Duromine
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__socials">
+                                <h4 class="footer__socials_title">Follow Us</h4>
+                                <ul class="footer__socials_items">
+                                    <li class="footer__socials_item">
+                                        <a href="" class="footer__socials_link">Facebook</a>
+                                    </li>
+                                    <li class="footer__socials_item">
+                                        <a href="" class="footer__socials_link">Twiter</a>
+                                    </li>
+                                    <li class="footer__socials_item">
+                                        <a href="" class="footer__socials_link">Pinterest</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

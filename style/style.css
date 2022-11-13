@@ -811,10 +811,17 @@ body {
 .step6__form-item {
     background-color: var(--bg-gray);
     border-radius: 14px;
-    /* padding: 20px 25px; */
     margin-bottom: 20px;
     font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
 }
+
+.step6__form-item:not(.select__title--active):hover {
+    background-color: var(--purple-hover);
+    cursor: pointer;
+}
+
 
 .step6__form-text {
     font-size: 18px;
