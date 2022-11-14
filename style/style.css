@@ -718,6 +718,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+
+.form-item--active {
+    border: 1px solid var(--purple);
+    border-radius: 14px;
 }
 
 .step4__form-inner_item {
