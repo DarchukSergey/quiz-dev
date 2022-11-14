@@ -42,6 +42,7 @@
     --black: #1C1C1E;
     --gray: #0F172A;
     --bg-gray: #EFEFEF;
+    --bg-gray-dark: #F5F5F5;
 }
 
 html {
@@ -767,7 +768,7 @@ body {
     margin-bottom: 45px;
 }
 
-.step6__form-item-inner{
+.step6__form-item-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -776,36 +777,37 @@ body {
     line-height: 130%;
     position: relative;
 }
-.step6__form-item-inner::after{
+
+.step6__form-item-inner::after {
     content: '';
     position: absolute;
     height: 24px;
     right: 20px;
 }
 
-.inner--drop1:after{
+.inner--drop1:after {
     background: url('../images/drop.png') center;
     width: 18px;
 }
 
-.inner--drop2:after{
+.inner--drop2:after {
     background: url('../images/drop2.png') center;
     width: 52px;
 }
 
-.inner--drop3:after{
+.inner--drop3:after {
     background: url('../images/drop3.png') center;
-    width: 78px; 
+    width: 78px;
 }
 
 
-.inner--drop4:after{
+.inner--drop4:after {
     background: url('../images/drop4.png') center;
     width: 104px;
 }
 
 
-.inner--drop5:after{
+.inner--drop5:after {
     background: url('../images/drop5.png') center;
     width: 135px;
 }
@@ -836,7 +838,7 @@ body {
 
 .step6__form-subtext {
     font-size: 10px;
-   
+
 }
 
 /* !---------------------------- end Page Step 6 Style --------------------------------------*/
@@ -918,7 +920,258 @@ body {
 
 
 /* !---------------------------- end Page Step 8 Style --------------------------------------*/
+/* !---------------------------- Page Step 13 Style --------------------------------------*/
 
+.section-thanks {}
+
+.thanks-title {
+    max-width: 790px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 75px;
+}
+
+.thank-settings__container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-bottom: 237px;
+}
+
+.thanks-settings {
+    background-color: var(--bg-gray-dark);
+    border-radius: 24px;
+    padding: 30px 94px 80px;
+    margin-bottom: 42px;
+}
+
+.thanks-settings__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.settings-field {
+    width: 288px;
+    background-color: #fff;
+    padding: 10px 10px 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.settings-field span {
+    font-weight: 500;
+}
+
+.settings-fields__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.settings-fields__data-gender {
+    background-color: var(--orange-light);
+    border-radius: 14px;
+    width: 189px;
+    height: 150px;
+    display: flex;
+}
+
+.settings-fields__data-gender_text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.settings-type__body {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.settings-type__body-field {
+    width: 288px;
+}
+
+.settings-type__water-field_inner {
+    width: 189px;
+}
+
+.settings-type__body-field_inner,
+.settings-type__water-field_inner,
+.setting-type__activity-text {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 8px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+
+.setting-type__activity-text {
+    padding: 20px 15px;
+}
+
+.settings-type__water-field_inner-subtext,
+.settings-type__body-field_inner-subtext {
+    font-size: 10px;
+}
+
+.settings-type__water-field_title,
+.settings-type__body-field_title,
+.setting-type__activity-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 5px;
+}
+
+.settings-type__body-field_inner-subtext {
+    line-height: 12px;
+}
+
+.setting-type__activity {
+    margin-bottom: 35px;
+}
+
+
+.thanks__settings-weight {
+    margin: 0 auto;
+}
+
+.setting-weight__title {
+    font-size: 32px;
+    margin-bottom: 45px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.settings-weight__total {
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+    padding: 21px;
+    text-align: center;
+}
+
+
+
+.settings-weight__total:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 62px;
+    background: url('../images/click.svg') center no-repeat;
+    top: -35px;
+    left: -35px;
+}
+
+.settings-weight__total:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 62px;
+    background: url('../images/click.svg') center no-repeat;
+    transform: rotate(-180deg);
+    bottom: -35px;
+    right: -35px;
+}
+
+
+.settings-weight__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.thanks__verification-block {
+    margin-bottom: 65px;
+}
+
+.thanks__verification {
+    text-align: center;
+    width: 545px;
+    margin: 0 auto;
+}
+
+.thanks__verification-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    width: 519px;
+}
+
+.thanks__verification input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.thanks__verification input+label {
+    align-items: center;
+    user-select: none;
+}
+
+.thanks__verification input+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid var(--text);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85% 85%;
+}
+
+.thanks__verification input:checked+label::before {
+    background-image: url("../images/mark-min.svg");
+}
+
+.thanks__verification-input {
+    margin-right: 10px;
+}
+
+.thanks__btn {
+    text-align: center;
+}
+
+.thanks__button {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    color: #fff;
+    border-radius: 100px;
+    background-color: var(--orange);
+    padding: 25px 155px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.thanks__button:hover{
+    background-color: var(--orange-hover);
+}
+
+/* !---------------------------- end Page Step 13 Style --------------------------------------*/
 /* !------------------------------------ custom setting should be at the bottom codefile----------- */
 
 
